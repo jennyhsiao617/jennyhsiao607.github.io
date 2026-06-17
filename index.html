@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jenny Hsiao | 影像設計師 & 創意策略師</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">Jenny<span>•</span>Hsiao</div>
+      <div class="controls">
+        <button class="control-btn" id="themeToggle" aria-label="切換深色淺色主題">🌙</button>
+        <button class="control-btn" id="langToggle" aria-label="切換語言">EN / 中文</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero segment" id="hero">
+        <div class="hero-copy">
+          <p class="eyebrow" data-key="heroTag">創作 x 科技 x 品牌故事</p>
+          <h1 data-key="heroTitle">你好，我是 Jenny Hsiao</h1>
+          <p class="hero-text" data-key="heroDescription">專注於打造具未來感的視覺體驗與動態品牌概念，將影像、產品策略與使用者感受結合成沉浸式電子名片。</p>
+          <div class="hero-actions">
+            <a href="#about" class="btn primary" data-key="heroAction1">深入了解</a>
+            <a href="#contact" class="btn secondary" data-key="heroAction2">聯絡我</a>
+          </div>
+          <div class="skill-badges">
+            <span>品牌策略</span>
+            <span>高階影片</span>
+            <span>數據視覺化</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=520&q=80" alt="Jenny Hsiao 的個人照片" />
+          </div>
+          <div class="device-shell">
+            <div class="device-screen">
+              <svg viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="個人作品視覺圖">
+                <defs>
+                  <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#9bd1ff" />
+                    <stop offset="100%" stop-color="#9f9cff" />
+                  </linearGradient>
+                  <filter id="blur">
+                    <feGaussianBlur stdDeviation="25" />
+                  </filter>
+                </defs>
+                <rect x="40" y="30" width="480" height="340" rx="32" fill="#11131a" stroke="rgba(255,255,255,0.06)" stroke-width="2" />
+                <path d="M72 87c42-18 120-36 206-12s172 46 226 86" fill="none" stroke="url(#glow)" stroke-width="16" stroke-linecap="round" filter="url(#blur)" opacity="0.75" />
+                <circle cx="150" cy="255" r="55" fill="#4d98ff" opacity="0.95" />
+                <path d="M135 153c28-12 60-16 88-12s44 13 66 24" fill="none" stroke="#a2d2ff" stroke-width="10" stroke-linecap="round" />
+                <circle cx="410" cy="180" r="28" fill="#ffd97a" opacity="0.95" />
+                <path d="M412 98c24 9 45 24 62 42s30 40 38 62" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity="0.8" />
+                <circle cx="370" cy="285" r="20" fill="#9f9cff" opacity="0.95" />
+                <path d="M82 310c32-18 82-40 152-36 80 4 136 42 192 68" fill="none" stroke="#7fd5ff" stroke-width="14" stroke-linecap="round" opacity="0.85" />
+              </svg>
+            </div>
+            <div class="device-shadow"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="segment" id="about">
+        <div class="section-heading">
+          <p class="eyebrow" data-key="aboutTag">ABOUT</p>
+          <h2 data-key="aboutTitle">關於我</h2>
+        </div>
+        <div class="content-grid">
+          <div class="info-card glass">
+            <h3 data-key="aboutSubtitle1">跨領域故事設計師</h3>
+            <p data-key="aboutText1">我以影像與品牌為核心，擅長將抽象概念轉化為沉浸式企劃，曾協助科技、藝術與時尚品牌打造爆款宣傳與產品發表。</p>
+          </div>
+          <div class="info-card glass">
+            <h3 data-key="aboutSubtitle2">專案亮點</h3>
+            <ul>
+              <li data-key="aboutList1">虛擬新品發表會：累積 180k 觀看次數</li>
+              <li data-key="aboutList2">品牌視覺改造：提升社群互動 73%</li>
+              <li data-key="aboutList3">沉浸式展覽企劃：博物館與科技融合體驗</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="segment panel" id="portfolio">
+        <div class="section-heading">
+          <p class="eyebrow" data-key="workTag">FEATURED</p>
+          <h2 data-key="workTitle">創作與成果</h2>
+        </div>
+        <div class="project-list">
+          <article class="project-card glass">
+            <span class="project-label" data-key="projectLabel1">品牌旅程</span>
+            <h3 data-key="projectTitle1">LUNA 未來夢想館</h3>
+            <p data-key="projectText1">打造品牌故事節奏與動態視覺語言，讓展覽與產品發表成為一場情緒共鳴。</p>
+          </article>
+          <article class="project-card glass">
+            <span class="project-label" data-key="projectLabel2">數位體驗</span>
+            <h3 data-key="projectTitle2">Stellar 智慧裝置</h3>
+            <p data-key="projectText2">設計高質感互動影片與社群短片，結合數據分析提升粉絲黏著度。</p>
+          </article>
+          <article class="project-card glass">
+            <span class="project-label" data-key="projectLabel3">藝術合作</span>
+            <h3 data-key="projectTitle3">極光動態裝置</h3>
+            <p data-key="projectText3">結合投影、聲音與視覺演算法，打造科技美學跨界展演。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="segment" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow" data-key="contactTag">CONTACT</p>
+          <h2 data-key="contactTitle">聯絡我</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card glass">
+            <h3 data-key="contactLabel1">Email</h3>
+            <p>jenny.hsiao@fakemail.com</p>
+          </div>
+          <div class="contact-card glass">
+            <h3 data-key="contactLabel2">辦公室</h3>
+            <p data-key="contactAddress">台北市信義區光復南路 389 號 18 樓</p>
+          </div>
+          <div class="contact-card glass">
+            <h3 data-key="contactLabel3">社群</h3>
+            <div class="social-links">
+              <a href="#">Instagram</a>
+              <a href="#">LinkedIn</a>
+              <a href="#">Behance</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="segment footer-panel">
+        <div class="footer-copy">
+          <p data-key="footerText">2026 © Jenny Hsiao. 這是一個純 HTML/CSS/JS 的電子名片展示頁面。</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
