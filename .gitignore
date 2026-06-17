@@ -1,0 +1,31 @@
+# Node, build and system files
+node_modules/
+dist/
+build/
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.pnpm-debug.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# caches
+.cache/
+.parcel-cache/
+coverage/
+
+# logs
+*.log
+
+# other
+.history
